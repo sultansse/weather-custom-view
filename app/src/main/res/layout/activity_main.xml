@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/weather"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+        <com.softwareit.weather_custom_view.view.CityWeatherView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:cityName="Uralsk"
+            app:country="Kazakhstan"
+            app:dayNight="day"
+            app:precipitationType="heavyRain"
+            app:temperature="19"
+            app:windy="false" />
+
+        <com.softwareit.weather_custom_view.view.CityWeatherView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:cityName="Astana"
+            app:country="Kazakhstan"
+            app:dayNight="night"
+            app:precipitationType="lightRain"
+            app:temperature="20"
+            app:windy="true" />
+
+        <com.softwareit.weather_custom_view.view.CityWeatherView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:cityName="Almaty"
+            app:country="Kazakhstan"
+            app:dayNight="day"
+            app:precipitationType="heavySnow"
+            app:temperature="13"
+            app:windy="false" />
+
+        <com.softwareit.weather_custom_view.view.CityWeatherView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:cityName="Taraz"
+            app:country="Kazakhstan"
+            app:dayNight="night"
+            app:precipitationType="lightSnow"
+            app:temperature="23"
+            app:windy="true" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
